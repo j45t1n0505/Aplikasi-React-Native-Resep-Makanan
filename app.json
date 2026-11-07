@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Dapur Nusa",
+    "slug": "dapur-nusa",
+    "description": "Buku resep masakan rumah Indonesia dengan panduan langkah, checklist bahan, dan timer pintar.",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "dapurnusa",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FAF5EF",
+    "primaryColor": "#B4232A",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dapurnusa.app",
+      "infoPlist": {
+        "UIUserInterfaceStyle": "Light"
+      }
+    },
+    "android": {
+      "package": "com.dapurnusa.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FAF5EF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-image",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 190,
+          "resizeMode": "contain",
+          "backgroundColor": "#FAF5EF",
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#FAF5EF"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "eea22d0f-d151-4dfe-a4a4-cc5372503419"
+      }
+    }
+  }
+}
